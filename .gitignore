@@ -3,3 +3,4 @@ scratch/*
 .claude/
 *.asv
 .DS_Store
+__pycache__/

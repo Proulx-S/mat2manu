@@ -17,3 +17,7 @@ the axis boxes; MATLAB fills one reserved layer; hand-drawn layers survive regen
   `docs/findings.md` records MATLAB's SVG-export mechanics: no element ids; every group wrapped in
   `matrix(72/ScreenPixelsPerInch…)`; size drift. Read it before trusting MATLAB SVG geometry.
 - **Research behind the approach:** `docs/survey-2026-11-01.md`.
+- **Prototype and its measurements:** `src/`, `test/` (`run_all.m`), `docs/evaluation.md`.
+  pypdf lives in the venv `~/opt/mat2manu-py`. Keep `DISPLAY` as is: without it, MATLAB's
+  `print`/`exportgraphics` hang on tako. With it, positions snap to 1/95 inch and font sizes
+  floor to whole pixels (7 pt prints as 6.82 pt).
