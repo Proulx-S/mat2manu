@@ -1,0 +1,5 @@
+scratch/*
+!scratch/.gitkeep
+.claude/
+*.asv
+.DS_Store
